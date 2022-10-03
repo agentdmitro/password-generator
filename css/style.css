@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #fff;
+  min-height: 100vh;
+  background: #4e54c8; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pw {
+  position: relative;
+}
+.pw input {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: #005BBB;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  color: #fff;
+}
+.pw input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.516);
+}
+.pw input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.516);
+}
+.pw input::placeholder {
+  color: rgba(255, 255, 255, 0.516);
+}
+.pw button {
+  background-color: #FFD500;
+  color: #005BBB;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%, 50%);
+}
+.pw-container {
+  background-color: rgba(76, 25, 126, 0.744);
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.pw-header {
+  padding: 1rem;
+}
+.pw-body {
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #eee;
+  font-size: 1.1rem;
+}
+.form-control label {
+  padding: 1.5rem 0;
+  flex: 1;
+  cursor: pointer;
+}
+.form-control input {
+  cursor: pointer;
+}
+
+.generate {
+  background-color: #FFD500;
+  color: #005BBB;
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: block;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.length {
+  margin-top: 1.4rem;
+}
+.length label {
+  padding: 0;
+}
+.length input {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.356);
+}
+.length input::-webkit-outer-spin-button, .length input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
